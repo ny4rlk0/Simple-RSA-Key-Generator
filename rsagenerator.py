@@ -7,7 +7,7 @@ def newKey():
     key_lenght=int(keylene.get())
     publicKey,privateKey=rsa.newkeys(int(key_lenght))
     prve.insert(0, privateKey);pbe.insert(0, publicKey)
-#UserBox
+#Keylen
 keylen=Label (w, text="Lenght:" ,bg="black",fg="white",font="none 12 bold");keylen.grid(row=0,column=0,sticky=W)
 keylene=Entry(w,width=40,bg="white");keylene.grid(row=0,column=1,sticky=W)
 keylene.insert(0, "1024")
